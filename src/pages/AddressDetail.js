@@ -10,7 +10,7 @@ function AddressDetail () {
     let {id} = useParams()
 
     useEffect(function() {
-        axios.get('https://fakerapi.it/api/v1/addresses')
+        axios.get('https://fakerapi.it/api/v1/addresses', { params: {_quantity: 50} })
             .then( res => {
                 setAddress(res.data.data[id])
             })

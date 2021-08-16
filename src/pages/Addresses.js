@@ -1,4 +1,5 @@
 import axios from "axios"
+import querystring from "querystring"
 import {Container, Row, Col} from 'react-bootstrap'
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
@@ -8,7 +9,7 @@ function Addresses() {
     let [addresses, setAddresses] = useState([])
     
     useEffect(function(){
-        axios.get('https://fakerapi.it/api/v1/addresses')
+        axios.get('https://fakerapi.it/api/v1/addresses', { params: {_quantity: 50} })
             .then(res => {
                 //console.log(res.data.data)
                 setAddresses(res.data.data)
