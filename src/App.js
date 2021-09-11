@@ -3,8 +3,10 @@ import Home from './pages/Home'
 import Addresses from './pages/Addresses'
 import AddressDetail from './pages/AddressDetail';
 import Books from './pages/Books'
+import CryptoYa from './pages/CryptoYa';
 
 import './App.css';
+
 
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
             
             <Route path='/addresses'>
                 <Addresses/>
+            </Route>
+
+            <Route path='/cryptoya'>
+                <CryptoYa/>
             </Route>
             
             <Route path='/books'>

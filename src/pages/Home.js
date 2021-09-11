@@ -14,6 +14,11 @@ function Home() {
                     <Link to="/addresses" className="text-primary">Addresses</Link>
                 </Col>
             </Row>
+            <Row>
+                <Col>
+                    <Link to="/cryptoya" className="text-primary">CryptoYa</Link>
+                </Col>
+            </Row>
         </Container>
     )
 }
